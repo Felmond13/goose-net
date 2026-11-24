@@ -1,0 +1,8 @@
+// The loader knows libc under a different name on each platform; the extern
+// "libc" block in libc.goose opens whatever this maps the name to.
+dylibs_linux = ["libc=libc.so.6"];
+dylibs_macos = ["libc=libSystem.dylib"];
+
+// Les exemples et les tests sont des fichiers racines à eux seuls, pas
+// des modules du paquet.
+exclude = ["examples", "test"];
