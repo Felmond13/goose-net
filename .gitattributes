@@ -1,0 +1,2 @@
+# Treat Goose source files as Goose for GitHub Linguist.
+*.goose linguist-language=Goose
